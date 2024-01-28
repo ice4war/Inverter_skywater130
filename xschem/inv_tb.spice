@@ -1,0 +1,39 @@
+** sch_path: /home/vlsi/Documents/sky130/Inverter_skywater130/xschem/inv_tb.sch
+**.subckt inv_tb
+x1 out in VCC VSS not W_N=1 L_N=0.15 W_P=2 L_P=0.15 m=1
+Vin in 0 pulse(0 1.8 0 .1n .1n 5n 10n)
+C1 out 0 .3p m=1
+**** begin user architecture code
+ .lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+vvcc vcc 0 dc 1.8
+vvss vss 0 dc 0
+.param VCC=1.8
+.tran 1n 25n
+.save all alli
+*.dc Vin 0 1.8 1m
+*let abs_val = (abs(deriv(out)) >= 1) * 1.8
+*.meas dc vth find v(in) when v(in)=v(out)
+*.meas dc VOH find out=0.2
+*.meas dc VOL find out=1.6
+*.meas dc VIH find in when abs_out=1 cross=1
+*.meas dc VIL find in when abs_out=1 cross=LAST
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  not.sym # of pins=2
+** sym_path: /home/vlsi/Documents/sky130/Inverter_skywater130/xschem/not.sym
+** sch_path: /home/vlsi/Documents/sky130/Inverter_skywater130/xschem/not.sch
+.subckt not y a VCCPIN VSSPIN     W_N=1 L_N=0.15 W_P=2 L_P=0.15
+*.opin y
+*.ipin a
+XM3 y a VCCPIN VCCPIN sky130_fd_pr__pfet_01v8 L=L_P W=W_P nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 y a VSSPIN VSSPIN sky130_fd_pr__nfet_01v8 L=L_N W=W_N nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end

@@ -67,14 +67,38 @@ Noise Margin analysis of inverter
 ---
 ![](https://imgur.com/W3uvMQj.png)
 
-|name|values|
-|---|---|
-|VTH|  0.8637|
-|VOH|1.80|
-|VOL|5.879296e-06 ~ 0|
-|VIL|0.7435556
-|VIH|0.9804444|
+|Parameters|values|
+|:---:|:---:|
+|VTH|  0.86V|
+|VOH|1.75V|
+|VOL|0.067V|
+|VIL|0.74V|
+|VIH|0.98V|
 
 ![](https://imgur.com/iLmdeZ9.png)
+
+
+>NML = VIL - VOL
+>NMH = VOH - VIH
+
+|Noise Margin|value|
+|:----:|:----:|
+|Low Noise Margin|0.673V|
+|High Noise Margin|0.77V|
+|Difference|0.097V|
+
+## Power Analysis
+![](https://imgur.com/nF1j5Me.png)
+|||
+|:---:|:---:|
+|Time interval|10n|
+|Supply voltage|1.8V|
+|Integration of current|-0.54pA|
+|Power consumption|-0.973pW|
+|AVG power|-97.3uW|
+|Dissipated power|5.24uW|
+|Dynamic Power|0.0972pW|
+
+
 
 
