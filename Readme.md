@@ -5,9 +5,9 @@ Brief analysis os MOS transfer characteristic and Inverter characteristics.
 |pmos | ![pfet_01_v8](https://imgur.com/1tG3RNvs.png) |
 
 ## Circuits
-**nMOS**
+**nMOS**</br>
 ![nmos circuit diagram](https://imgur.com/EnDXLCs.png)
-**pMOS**
+**pMOS**</br>
 ![pmos circuit diagram](https://imgur.com/Iwy6rux.png)
 ### Analysis
 
@@ -18,28 +18,31 @@ DC analysis of both MOS transistors.
 >Vgs varies from 0 to 2 step of 0.5 
 
 ### DC Tranfer charateristics of MOS transistors
-**nmos**
+**nmos**</br>
 ![nmos dc VTC](https://imgur.com/YUxFrlK.png)
-**pmos**
+**pmos**</br>
 ![pmos dc VTC](https://imgur.com/x9CD1Qv.png)
+
 >DC sweep of vgs
 >Vgs varies from 0 to 1.8 step of 1m 
 >Vds varies from 0 to 2 step of 0.3
 
-**nmos**
-![](https://imgur.com/Nb0RUJY.png)**pmos**
+**nmos**</br>
+![](https://imgur.com/Nb0RUJY.png)
+**pmos**</br>
 ![](https://imgur.com/yXyPx17.png)
 ## Gm of MOS
 **nmos**
-Vds sweep
+Vds sweep</br>
 ![](https://imgur.com/BDXNgoQ.png)
-Vgs sweep
+Vgs sweep</br>
 ![](https://imgur.com/MAne8TM.png)
 **pmos**
-Vds sweep
+Vds sweep</br>
 ![](https://imgur.com/e4rLkN6.png)
-Vgs sweep
+Vgs sweep</br>
 ![](https://imgur.com/QDlHf5G.png)
+</br>
 |parameters|at|values|sweep|
 |----|----|---|---|
 |ids|1.8|5.215487e-04|Vgs|
@@ -54,13 +57,13 @@ meas gm_val dc find gm at=1.8
 meas rds_val dc find rds at=1.8
 ```
 ## Inverter analysis
-circuit diagram
+circuit diagram </br>
 ![](https://imgur.com/eapaFEU.png)
 
-Test bench
+Test bench</br>
 ![](https://imgur.com/yv5AVBx.png)
 ## DC analysis of inverter
-DC characteristic curve
+DC characteristic curve</br>
 ![](https://imgur.com/NsSF7mv.png)
 
 Noise Margin analysis of inverter
