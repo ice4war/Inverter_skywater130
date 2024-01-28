@@ -6,43 +6,44 @@ Brief analysis os MOS transfer characteristic and Inverter characteristics.
 
 ## Circuits
 **nMOS**</br>
-![nmos circuit diagram](https://imgur.com/EnDXLCs.png)
+![nmos circuit diagram](https://imgur.com/EnDXLCs.png)</br>
 **pMOS**</br>
-![pmos circuit diagram](https://imgur.com/Iwy6rux.png)
+![pmos circuit diagram](https://imgur.com/Iwy6rux.png)</br>
 ### Analysis
 
 DC analysis of both MOS transistors.
 
->DC sweep of vds
->Vds varies from 0 to 1.8 step of 1m 
+>DC sweep of vds</br>
+>Vds varies from 0 to 1.8 step of 1m </br>
 >Vgs varies from 0 to 2 step of 0.5 
 
 ### DC Tranfer charateristics of MOS transistors
 **nmos**</br>
-![nmos dc VTC](https://imgur.com/YUxFrlK.png)
+![nmos dc VTC](https://imgur.com/YUxFrlK.png)</br>
 **pmos**</br>
-![pmos dc VTC](https://imgur.com/x9CD1Qv.png)
+![pmos dc VTC](https://imgur.com/x9CD1Qv.png)</br>
 
->DC sweep of vgs
->Vgs varies from 0 to 1.8 step of 1m 
->Vds varies from 0 to 2 step of 0.3
+>DC sweep of vgs</br>
+>Vgs varies from 0 to 1.8 step of 1m </br>
+>Vds varies from 0 to 2 step of 0.3</br>
 
 **nmos**</br>
-![](https://imgur.com/Nb0RUJY.png)
+![](https://imgur.com/Nb0RUJY.png)</br>
 **pmos**</br>
-![](https://imgur.com/yXyPx17.png)
+![](https://imgur.com/yXyPx17.png)<br>
+
 ## Gm of MOS
 **nmos**
 Vds sweep</br>
-![](https://imgur.com/BDXNgoQ.png)
+![](https://imgur.com/BDXNgoQ.png)</br>
 Vgs sweep</br>
-![](https://imgur.com/MAne8TM.png)
+![](https://imgur.com/MAne8TM.png)</br>
 **pmos**
 Vds sweep</br>
-![](https://imgur.com/e4rLkN6.png)
+![](https://imgur.com/e4rLkN6.png)</br>
 Vgs sweep</br>
-![](https://imgur.com/QDlHf5G.png)
-</br>
+![](https://imgur.com/QDlHf5G.png)</br>
+
 |parameters|at|values|sweep|
 |----|----|---|---|
 |ids|1.8|5.215487e-04|Vgs|
@@ -58,17 +59,17 @@ meas rds_val dc find rds at=1.8
 ```
 ## Inverter analysis
 circuit diagram </br>
-![](https://imgur.com/eapaFEU.png)
+![](https://imgur.com/eapaFEU.png)</br>
 
 Test bench</br>
-![](https://imgur.com/yv5AVBx.png)
+![](https://imgur.com/yv5AVBx.png)</br>
 ## DC analysis of inverter
 DC characteristic curve</br>
-![](https://imgur.com/NsSF7mv.png)
+![](https://imgur.com/NsSF7mv.png)</br>
 
 Noise Margin analysis of inverter
 ---
-![](https://imgur.com/W3uvMQj.png)
+![](https://imgur.com/W3uvMQj.png)</br>
 
 |Parameters|values|
 |:---:|:---:|
@@ -78,10 +79,10 @@ Noise Margin analysis of inverter
 |VIL|0.74V|
 |VIH|0.98V|
 
-![](https://imgur.com/iLmdeZ9.png)
+![](https://imgur.com/iLmdeZ9.png)</br>
 
 
->NML = VIL - VOL
+>NML = VIL - VOL<br />
 >NMH = VOH - VIH
 
 |Noise Margin|value|
@@ -91,7 +92,7 @@ Noise Margin analysis of inverter
 |Difference|0.097V|
 
 ## Power Analysis
-![](https://imgur.com/nF1j5Me.png)
+![](https://imgur.com/nF1j5Me.png)</br>
 |||
 |:---:|:---:|
 |Time interval|10n|
